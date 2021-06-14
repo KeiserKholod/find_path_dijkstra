@@ -96,7 +96,7 @@ def find_path_dijkstra(matrix, source, dest):
         distances = calculate_distances(matrix, distances, ind + 1, source, prev_points)
         print("node", ind + 1,"visited", visited,"distances", distances,"prev_points",prev_points)
         if len(visited) == len(matrix):
-            if visited[len(visited)-1] == source:
+            if distances[dest-1] == MAX_INT:
                 return (distances[dest - 1] , None)
             return (distances[dest - 1] , get_path(source, dest, prev_points))
     
