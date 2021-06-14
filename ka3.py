@@ -2,7 +2,7 @@
 MAX_INT = 2**64
 
 
-def get_data_from_file(path_to_file="in2.txt"):
+def get_data_from_file(path_to_file="in.txt"):
     matrix = []
     matrix_str = ""
     with open(path_to_file, "r") as file:
